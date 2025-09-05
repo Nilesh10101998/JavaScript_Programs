@@ -1,17 +1,16 @@
 
-function reverseName(str) {
+function isPalindrome(str) {
 
-    let newString = "";
+    let reversed = "";
 
     for (let i = str.length - 1; i >= 0; i--) {
 
-        newString += str[i];
+        reversed += str[i];
 
     }
 
-    return newString;
+    return str === reversed;
 }
 
-const originalString = "Programming";
-const reversedString = reverseName(originalString);
-console.log(reversedString);
+console.log(isPalindrome("madam"));
+console.log(isPalindrome("hello"));
