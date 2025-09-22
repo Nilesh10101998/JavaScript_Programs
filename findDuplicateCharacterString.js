@@ -17,10 +17,8 @@ function findDuplicateCharacters(str) {
                 if (!duplicates.includes(char)) {
                     duplicates.push(char);
                 }
-                
-            }
 
-            else {
+            } else {
                 seen[char] = true;
             }
         }
@@ -30,4 +28,4 @@ function findDuplicateCharacters(str) {
 
 }
 
-console.log(findDuplicateCharacters("Cricket"));
+console.log(findDuplicateCharacters("Crickettttt"));
