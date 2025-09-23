@@ -13,7 +13,6 @@ function findDuplicateCharacters(str) {
         if (char >= 'a' && char <= 'z') {
 
             if (seen[char]) {
-
                 if (!duplicates.includes(char)) {
                     duplicates.push(char);
                 }

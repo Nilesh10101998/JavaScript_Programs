@@ -17,4 +17,4 @@ function primeNumber(num) {
 
 }
 
-console.log(primeNumber(7));
+console.log(primeNumber(17));
