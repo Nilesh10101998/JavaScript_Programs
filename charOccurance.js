@@ -24,4 +24,4 @@ function charOccurance(str) {
     return counts;
 }
 
-console.log(charOccurance("Tuess"));
+console.log(charOccurance("Tuesday"));
