@@ -1,30 +1,21 @@
 
-function findDuplicateCharacters(str) {
+function duplicateChar(str) {
 
-    let seen = {};
-    let duplicates = [];
+    let seen = new Set();
+    let duplicates = new Set();
 
-    str = str.toLowerCase();
+    for (let char of str) {
 
-    for (let i = 0; i < str.length; i++) {
-
-        let char = str[i];
-
-        if (char >= 'a' && char <= 'z') {
-
-            if (seen[char]) {
-                if (!duplicates.includes(char)) {
-                    duplicates.push(char);
-                }
-
-            } else {
-                seen[char] = true;
-            }
+        if (seen.has(char)) {
+            duplicates.add(char);
+        }
+        else {
+            seen.add(char);
         }
     }
 
-    return duplicates;
-
+    return Array.from(duplicates);
 }
 
-console.log(findDuplicateCharacters("Crickettttt"));
+let str = "Nileshheil"
+console.log(duplicateChar(str));

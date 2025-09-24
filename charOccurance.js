@@ -12,7 +12,7 @@ function charOccurance(str) {
         if (char >= 'a' && char <= 'z') {
 
             if (counts[char]) {
-                counts[char]++
+                counts[char]++;
             }
             else {
                 counts[char] = 1;
