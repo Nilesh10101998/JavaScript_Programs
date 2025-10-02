@@ -25,8 +25,8 @@ function printVowelsAndConsonants(str) {
 
     }
 
-    console.log("Vowels " + vowels);
-    console.log("Cosonants " + consonants);
+    console.log("Vowels: " + vowels);
+    console.log("Cosonants: " + consonants);
 }
 
 printVowelsAndConsonants("ILoveYou");
